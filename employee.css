@@ -1,0 +1,331 @@
+.add{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.addh{
+    margin-left: 50px;
+    
+}
+
+.addp{
+    margin-left: 50px;
+}
+
+.div1{
+    background: rgb(253, 252, 252);
+    border: 2px solid rgb(175, 174, 174);
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 6%;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 15px rgba(20,30,60,0.06);;
+}
+
+.photo {
+    display: inline-block;   
+}
+
+.photo img{
+  width: 70%;
+  margin-left: 7%;
+   border: 4px solid rgb(193, 238, 252);
+   border-radius: 19px;
+   box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+.upload {
+    display: inline-block;
+    margin-left: -20px;
+}
+
+.upload h5{
+    font-weight: bold;
+}
+
+.div2{
+    background-color: rgb(253, 252, 252);
+    border: 2px solid rgb(173, 172, 172);
+    border-radius: 20px;
+    margin-bottom: 25px;
+    width: 80%;
+    padding: 15px 20px;
+      box-shadow: 0px 4px 15px rgba(20,30,60,0.04);
+      animation: box 0.5s ease;
+      margin: 20px;
+      margin-left: 80px;
+
+}
+
+@keyframes box {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.div2 h4{
+    margin: 20px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.div2 svg{
+    color: blue;
+    margin-top: -4px;
+    margin-right: 8px;
+    font-size: 17px;
+}
+
+.formbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 25px;
+}
+
+.formbox2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.group label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.group input,
+.group select{
+    width: 100%;
+    height: 52px;
+    border: 1px solid #d7ddea;
+    border-radius: 12px;
+    padding: 0px 16px;
+    font-size: 16px;
+    color: #273252;
+    background: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.group input:focus,
+.group select:focus{
+    border-color: #315de8;
+    box-shadow: 0 0 0 3px rgba(49,93,232,0.12);
+}
+
+.in-icon{
+    position: relative;
+}
+
+.in-icon i{
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    z-index: 2;
+}
+
+.in-icon svg{
+  position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    z-index: 2;
+}
+
+.in-icon input{
+    padding-left: 48px;
+}
+
+.in-icon select{
+    padding-left: 48px;
+}
+
+.form-button{
+    display: flex;
+    margin-left: 70%;
+    gap: 15px;
+    margin-top: 25px;
+    
+}
+
+.form-button button{
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.cancel{
+    background: white;
+    border: 1px solid #d6dbe6;
+    color: #4d566d;
+    padding: 7px 30px;
+}
+
+.cancel:hover{
+    background: #f1f3f8;
+    transform: translateY(-2px);
+}
+
+.save{
+    background: #315de8;
+    color: white;
+    border: none;
+    padding: 7px 30px;
+    box-shadow: 0 5px 15px rgba(49,93,232,0.25);
+}
+
+.save:hover{
+    background: #244bd0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(49,93,232,0.35);
+}
+
+.save:active,
+.cancel:active{
+    transform: scale(0.96);
+}
+
+#employeeList{
+    width: 85%;
+    margin: auto;
+}
+
+
+.employee-card{
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+.employee-card h2{
+    color: black;
+    margin-bottom: 15px;
+    
+}
+
+.employee-card p{
+
+    margin: 8px 0;
+    color: black;
+   
+}
+@media (max-width:480px) {
+    .add{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .addh,.addp{
+        margin-left: 15px;
+    }
+
+    .div1{
+        width: 92%;
+        margin-left: 4%;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .photo,.upload{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .photo img{
+        width: 30%;
+        margin-left: 0;
+    }
+
+    .upload h5{
+        font-size: 15px;
+    }
+
+    .div2{
+        width: 92%;
+        margin: 15px 4%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .div2 h4{
+        margin: 10px;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .div2 svg{
+        width: 18px;
+        height: 18px;
+    }
+
+    .formbox,.formbox2{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .group label{
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .group input,
+    .group select{
+        width: 100%;
+        height: 48px;
+        font-size: 14px;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .in-icon input,
+    .in-icon select{
+        padding-left: 42px;
+    }
+
+    .in-icon i,
+    .in-icon svg{
+        left: 13px;
+    }
+
+    .form-button{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .form-button button{
+        font-size: 14px;
+    }
+
+    .cancel,
+    .save{
+        padding: 8px 22px;
+    }
+}
