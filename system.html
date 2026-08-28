@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+
+    <!-- The sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <button class="btn1">S</button>
+            <p class="p1">Stratos EMS <i class="fa-solid fa-chevron-left" id="icon1"></i></p>
+        </div>
+        <h6 class="head1">MAIN MENU</h6>
+
+        <div class="dashb">
+            <a href="#" class="btn2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-layout-dashboard-icon lucide-layout-dashboard">
+                    <rect width="7" height="9" x="3" y="3" rx="1" />
+                    <rect width="7" height="5" x="14" y="3" rx="1" />
+                    <rect width="7" height="9" x="14" y="12" rx="1" />
+                    <rect width="7" height="5" x="3" y="16" rx="1" />
+                </svg> Dashboard
+            </a>
+        </div>
+        <div class="anchor">
+            <a href="index.html" class="btn3  text-start mb-2" style="margin-left: 10px ;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-users-icon lucide-users">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                    <circle cx="9" cy="7" r="4" />
+                </svg> Employees
+                <button class="s1">100</button> </a>
+
+            <a href="#" class="btn3  text-start mb-2" style="margin-left: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-square-chart-gantt-icon lucide-square-chart-gantt">
+                    <rect width="18" height="18" x="3" y="3" rx="2" />
+                    <path d="M9 8h7" />
+                    <path d="M8 12h6" />
+                    <path d="M11 16h5" />
+                </svg> Departments <button class="ss">10</button>
+            </a>
+
+            <div class="anchor1">
+
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-calendar-check-icon lucide-calendar-check">
+                        <path d="M8 2v3" />
+                        <path d="M16 2v3" />
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18" />
+                        <path d="m9 15 2 2 4-4" />
+                    </svg>Attendence
+                </a>
+            </div>
+
+            <div class="anchor1">
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-credit-card-icon lucide-credit-card">
+                        <rect width="20" height="14" x="2" y="5" rx="2" />
+                        <line x1="2" x2="22" y1="10" y2="10" />
+                    </svg>Payroll
+                </a>
+            </div>
+
+            <div class="anchor1">
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-calendar-days-icon lucide-calendar-days">
+                        <path d="M8 2v3" />
+                        <path d="M16 2v3" />
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18" />
+                        <path d="M8 13h.01" />
+                        <path d="M12 13h.01" />
+                        <path d="M16 13h.01" />
+                        <path d="M8 17h.01" />
+                        <path d="M12 17h.01" />
+                        <path d="M16 17h.01" />
+                    </svg> Leave <button class="s2">2 PENDING</button>
+                </a>
+            </div>
+
+            <div class="anchor1">
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-arrow-trend-up"></i>Performance
+                </a>
+            </div>
+
+            <div class="anchor1">
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chart-column-decreasing-icon lucide-chart-column-decreasing">
+                        <path d="M13 17V9" />
+                        <path d="M18 17v-3" />
+                        <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                        <path d="M8 17V5" />
+                    </svg> Reports
+                </a>
+            </div>
+
+            <div class="anchor1">
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-calendar-icon lucide-calendar">
+                        <path d="M8 2v3" />
+                        <path d="M16 2v3" />
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18" />
+                    </svg> Calender
+                </a>
+            </div>
+
+            <div class="anchor1">
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-message-square-icon lucide-message-square">
+                        <path
+                            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
+                    </svg> Messages <button class="s3">2</button>
+                </a>
+            </div>
+
+            <div class="anchor1">
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-bell-icon lucide-bell">
+                        <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                        <path
+                            d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+                    </svg> Notification <button class="s4">4</button>
+                </a>
+            </div>
+
+            <h6 class="head2">MANAGEMENT</h6>
+            <div class="anchor1">
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-settings-icon lucide-settings">
+                        <path
+                            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg> Settings
+                </a>
+            </div>
+            <div class="anchor1">
+                <a href="#" class="btn4 text-start d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-user-icon lucide-user">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg> Profile
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Page content -->
+    <div class="content">
+        <div class="back">
+            <div class="input1" style="margin: 18px;">
+                <i class="fa-solid fa-magnifying-glass" id="icon3"></i><input type="search"
+                    placeholder="Search employees, documents, or reports...">
+            </div>
+
+            <div>
+                <button class="system"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-dot-icon lucide-dot">
+                        <circle cx="12" cy="12" r="1" />
+                    </svg>System Active</button>
+                <span class="sp1">|</span>
+            </div>
+
+            <div class="rule">
+                <button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-shield-alert-icon lucide-shield-alert" style="color: rgb(138, 138, 252);">
+                        <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                        <path d="M12 8v4" />
+                        <path d="M12 16h.01" />
+                    </svg>Role: <select>
+                        <option value="ad" class="op1">Admin</option>
+                        <option value="hr">HR Manager</option>
+                        <option value="dep">Deparment Head</option>
+                        <option value="emp">Employee</option>
+                    </select></button>
+            </div>
+
+            <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-moon-icon lucide-moon">
+                    <path
+                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+                </svg>
+            </div>
+            <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-globe-icon lucide-globe">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                    <path d="M2 12h20" />
+
+                </svg>
+            </div>
+
+            <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-message-square-icon lucide-message-square">
+
+                    <path
+                        d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
+
+                </svg>
+            </div>
+
+            <div class="icons">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-bell-ring-icon lucide-bell-ring">
+                    <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                    <path d="M22 8c0-2.3-.8-4.3-2-6" />
+                    <path
+                        d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+                    <path d="M4 2C2.8 3.7 2 5.7 2 8" />
+                </svg>
+            </div>
+            <div class="Av">
+                <button>AV <select>
+                    </select></button>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="dash">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-house-icon lucide-house">
+                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                    <path
+                        d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                </svg> Dashboard <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                    <path d="m9 18 6-6-6-6" />
+                </svg>
+                <span style="color: black;">Empolyee</span>
+                <h3>Empolyee Directory</h3>
+                <p>Manage global profiles, designations, contract, and employment status.</p>
+                <div class="export">
+                    <button class="btn5"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-download-icon lucide-download">
+                            <path d="M12 15V3" />
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <path d="m7 10 5 5 5-5" />
+                        </svg>Export List</button>
+                    <button class="btn6"  onclick="window.location.href='addemployee.html'"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus">
+                            <path d="M5 12h14" />
+                            <path d="M12 5v14" />
+                        </svg>Add Employee</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="employe">
+            <div class="input2">
+                <i class="fa-solid fa-magnifying-glass" id="icon4"></i><input type="search"
+                    placeholder="Search by name, ID, email,title...">
+            </div>
+
+            <div class="dep">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-funnel-icon lucide-funnel">
+                        <path
+                            d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" />
+                    </svg>Dept: <select class="select1">
+                        <option value="">All</option>
+                        <option value="">Engineering</option>
+                        <option value="">Product Management</option>
+                        <option value="">Human Ressources</option>
+                        <option value="">Sales & Growth</option>
+                        <option value="">Marketing and Brand</option>
+                        <option value="">Finance $ Accounting</option>
+                        <option value="">UI/UX Design</option>
+                        <option value="">Customer Support </option>
+                        <option value="">Operations & IT</option>
+                        <option value="">Legal & Compliance</option>
+                    </select></button>
+            </div>
+            <div class="status">
+                <button> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-user-check-icon lucide-user-check">
+                        <path d="m16 11 2 2 4-4" />
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                    </svg>Status: <select>
+                        <option value="">All</option>
+                        <option value="">Active</option>
+                        <option value="">On Leave</option>
+                        <option value="">Probation</option>
+                        <option value="">Terminates</option>
+                    </select></button>
+            </div>
+
+            <div class="status">
+                <button>Sort: <select>
+                        <option value="">Name</option>
+                        <option value="">joining Date</option>
+                        <option value="">Salary</option>
+
+                    </select> <svg style="margin-top: -4px;" xmlns="http://www.w3.org/2000/svg" width="24" height="10"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-move-down-icon lucide-move-down">
+                        <path d="M8 18L12 22L16 18" />
+                        <path d="M12 2V22" />
+                    </svg></button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="start-emp">
+            
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>EMPLOYEE</th>
+                        <th>EMP <br>ID</th>
+                        <th>DEPARTMENT</th>
+                        <th>DESIGNATION</th>
+                        <th>CONTACT</th>
+                        <th>JOINEd</th>
+                        <th>SALARY</th>
+                        <th>STATUS</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/Aaliyah.jfif" alt="">
+                                <div>
+
+                                    <strong>Aaliyah Ramirez</strong>
+                                    <p>Employee</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1028</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Cutomer Support</td>
+
+                        <td>Head of Customer ... </td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>aaliyah.ramirez@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 127-1189</span>
+                        </td>
+
+                        <td>2023-04-28</td>
+
+                        <td>$64, 000/yr</td>
+
+                        <td>
+                            <span class=" statuss active"><i class="fa-solid fa-circle"
+                                    style="color:  rgb(125, 248, 145);"></i> Active</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/abigail.jfif" alt="">
+                                <div>
+
+                                    <strong>Abigail White</strong>
+                                    <p>Employee</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1024</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Sales & Growth</td>
+
+                        <td>Revenue Ops Lead</td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>abigail.white@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 123-1161</span>
+                        </td>
+
+                        <td>2025-12-24</td>
+
+                        <td>$158, 500/yr</td>
+
+                        <td>
+                            <span class=" statuss probation"><i class="fa-solid fa-circle"
+                                    style="color:  rgb(248, 209, 131);;"></i>probation</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/addsion.jfif" alt="">
+                                <div>
+
+                                    <strong>Addison Reyes</strong>
+                                    <p>Employee</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1060</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Legal & Compliance</td>
+
+                        <td>Legal Operations M...</td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>addison.reyes@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 169-1483</span>
+                        </td>
+
+                        <td>2025-12-04</td>
+
+                        <td>$95, 500/yr</td>
+
+                        <td>
+                            <span class=" statuss active "><i class="fa-solid fa-circle"
+                                    style="color:  rgb(125, 248, 145);"></i> Active</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/alexander.jfif" alt="">
+                                <div>
+
+                                    <strong>Alexander Smith</strong>
+                                    <p>Admin</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1001</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Engineering</td>
+
+                        <td>Senior Lead Architect</td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>alendar.smith@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 100-1000</span>
+                        </td>
+
+                        <td>2020-01-01</td>
+
+                        <td>$95, 500/yr</td>
+
+                        <td>
+                            <span class=" statuss active "><i class="fa-solid fa-circle"
+                                    style="color:  rgb(125, 248, 145);"></i> Active</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/alexander.jfif" alt="">
+                                <div>
+
+                                    <strong>Alexander Smith</strong>
+                                    <p>Employee</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1091</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Engineering</td>
+
+                        <td>Senior Lead Architect</td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>Alexander.smith@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 190-1630</span>
+                        </td>
+
+                        <td>2020-07-07</td>
+
+                        <td>$122, 500/yr</td>
+
+                        <td>
+                            <span class=" statuss active "><i class="fa-solid fa-circle"
+                                    style="color:  rgb(125, 248, 145);"></i> Active</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/amelia.jfif" alt="">
+                                <div>
+
+                                    <strong>Amelia Martin</strong>
+                                    <p>Employee</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1020</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Legal & Compliance</td>
+
+                        <td>Compliance Officer</td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>amelia.martin@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 119-1133</span>
+                        </td>
+
+                        <td>2021-08-20</td>
+
+                        <td>$140, 500/yr</td>
+
+                        <td>
+                            <span class=" statuss active "><i class="fa-solid fa-circle"
+                                    style="color:  rgb(125, 248, 145);"></i> Active</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/andrew.jfif" alt="">
+                                <div>
+
+                                    <strong>Andrew Reed</strong>
+                                    <p>Employee</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1073</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Human Ressources</td>
+
+                        <td>HR Director</td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>andrew.reed@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 169-1483</span>
+                        </td>
+
+                        <td>2020-01-17</td>
+
+                        <td>$154, 500/yr</td>
+
+                        <td>
+                            <span class=" statuss active "><i class="fa-solid fa-circle"
+                                    style="color:  rgb(125, 248, 145);"></i> Active</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/anthony.jfif" alt="">
+                                <div>
+
+                                    <strong>Anthony Morales</strong>
+                                    <p>Employee</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1063</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Human Ressources</td>
+
+                        <td>People Operations...</td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>anthony.morales@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 162-1434</span>
+                        </td>
+
+                        <td>2022-03-07</td>
+
+                        <td>$109, 000/yr</td>
+
+                        <td>
+                            <span class=" statuss leave"><i class="fa-solid fa-circle" style="color: red;"></i>on
+                                Leave</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/asher.jfif" alt="">
+                                <div>
+
+                                    <strong>Asher Watson</strong>
+                                    <p>Employee</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1081</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Engineering</td>
+
+                        <td>Backend Specialist</td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>asher.watson@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 180-1560</span>
+                        </td>
+
+                        <td>2022-09-25</td>
+
+                        <td>$77, 500/yr</td>
+
+                        <td>
+                            <span class=" statuss active "><i class="fa-solid fa-circle"
+                                    style="color:  rgb(125, 248, 145);"></i> Active</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="employes">
+                                <img src="images/aubrey.jfif" alt="">
+                                <div>
+
+                                    <strong>Aubery Morris </strong>
+                                    <p>Employee</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>EMP-1062</td>
+
+                        <td> <i class="fa-solid fa-briefcase"></i>
+                            Product Management</td>
+
+                        <td>Senior Product Ma...</td>
+
+                        <td class="contact">
+                            <span><i class="fa-regular fa-envelope"></i>aubrey.morris@nexcuorp.com</span>
+                            <span><i class="fa-solid fa-phone"></i>+1 (555) 169-1483</span>
+                        </td>
+
+                        <td>2021-02-06</td>
+
+                        <td>$104, 500/yr</td>
+
+                        <td>
+                            <span class=" statuss active "><i class="fa-solid fa-circle"
+                                    style="color:  rgb(125, 248, 145);"></i> Active</span>
+                        </td>
+
+                        <td class="actions">
+                            <i class="fa-regular fa-eye" onclick="viewEmployee(this)"></i>
+                            <i class="fa-regular fa-pen-to-square" onclick="window.location.href='edit.html'"></i>
+                            <i class="fa-regular fa-trash-can" onclick="deleteEmployee(this)"></i>
+
+                        </td>
+                    </tr>
+                    <tr class="show">
+                        <td>Showing <span>1</span> to <span>10</span> of <span>100</span> employees
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td class="span1">
+                           
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left">
+                                    <path d="m15 18-6-6 6-6" />
+                                </svg></button> <span>1/10</span>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg></button>
+                        </td>
+                    </tr>
+                    
+
+                </tbody>
+            </table>
+
+        </div>
+         <div class="employee-details" id="employeeDetails">
+                <h3>Employee Details</h3>
+
+                <p>Name: <span id="viewName"></span></p>
+                <p>Employee ID: <span id="viewId"></span></p>
+                <p>Department: <span id="viewDepartment"></span></p>
+                <p>Desgination: <span id="viewDesgination"></span></p>
+                <p>Contact: <span id="viewContact"></span></p>
+                <p>Joined: <span id="viewJoined"></span></p>
+                <p>Salary: <span id="viewSalary"></span></p>
+                <p>Status: <span id="viewStatus"></span></p>
+
+                <button onclick="closeDetails()">Close</button>
+
+            </div>
+
+        <hr>
+        <div class="footer">
+            <p>© 2026 Nexus Crop Enterprise EMS. All rights reserved.</p>
+            <span>Prviacy Policy &nbsp; &nbsp; Terms Of Service &nbsp; &nbsp; HR Helpdesk</span>
+           
+        </div>
+    </div>
+   
+
+
+</div>
+
+   
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
