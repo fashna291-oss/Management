@@ -27,7 +27,7 @@
         <h6 class="head1">MAIN MENU</h6>
 
         <div class="dashb">
-            <a href="#" class="btn2 ">
+            <a href="dashboard.html" class="btn2 ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-layout-dashboard-icon lucide-layout-dashboard">
@@ -39,7 +39,7 @@
             </a>
         </div>
         <div class="anchor">
-            <a href="index.html" class="btn3  text-start mb-2" style="margin-left: 10px ;">
+            <a href="system.html" class="btn3  text-start mb-2" style="margin-left: 10px ;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-users-icon lucide-users">
@@ -195,32 +195,27 @@
                     placeholder="Search employees, documents, or reports...">
             </div>
 
-            <div>
-                <button class="system"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <div class="system">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="lucide lucide-dot-icon lucide-dot">
                         <circle cx="12" cy="12" r="1" />
-                    </svg>System Active</button>
-                <span class="sp1">|</span>
+                    </svg>System Active
             </div>
+             <span class="sp1">|</span>
 
             <div class="rule">
-                <button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 24" fill="none"
+                 <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-shield-alert-icon lucide-shield-alert" style="color: rgb(138, 138, 252);">
+                        class="lucide lucide-shield-alert-icon lucide-shield-alert" style="color: rgb(9, 156, 9);">
                         <path
                             d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
                         <path d="M12 8v4" />
                         <path d="M12 16h.01" />
-                    </svg>Role: <select>
-                        <option value="ad" class="op1">Admin</option>
-                        <option value="hr">HR Manager</option>
-                        <option value="dep">Deparment Head</option>
-                        <option value="emp">Employee</option>
-                    </select></button>
+                    </svg> Role:
             </div>
 
-            <div class="icons">
+            <div class="icons" id="darktheme">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-moon-icon lucide-moon">
@@ -262,10 +257,7 @@
                     <path d="M4 2C2.8 3.7 2 5.7 2 8" />
                 </svg>
             </div>
-            <div class="Av">
-                <button>AV <select>
-                    </select></button>
-            </div>
+           
         </div>
 
         <div class="main">
@@ -281,7 +273,7 @@
                     class="lucide lucide-chevron-right-icon lucide-chevron-right">
                     <path d="m9 18 6-6-6-6" />
                 </svg>
-                <span style="color: black;">Empolyee</span>
+                <span >Empolyee</span>
                 <h3>Empolyee Directory</h3>
                 <p>Manage global profiles, designations, contract, and employment status.</p>
                 <div class="export">
@@ -305,8 +297,9 @@
 
         <div class="employe">
             <div class="input2">
-                <i class="fa-solid fa-magnifying-glass" id="icon4"></i><input type="search"
-                    placeholder="Search by name, ID, email,title...">
+                <i class="fa-solid fa-magnifying-glass" id="icon4"></i>
+                <input type="search" id="employeeSearch"
+                    placeholder="Search by name, ID, email,title..." >
             </div>
 
             <div class="dep">
@@ -459,7 +452,7 @@
 
                         <td>
                             <span class=" statuss probation"><i class="fa-solid fa-circle"
-                                    style="color:  rgb(248, 209, 131);;"></i>probation</span>
+                                    style="color:  rgb(252, 200, 97);;"></i>probation</span>
                         </td>
 
                         <td class="actions">

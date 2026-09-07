@@ -1,5 +1,6 @@
 
 
+
 /* The side navigation menu */
 .sidebar {
   margin: 0;
@@ -11,7 +12,7 @@
 ), rgb(21, 21, 59);
   position: fixed;
   height: 100%;
-  overflow: auto;
+  
 }
 
 
@@ -185,7 +186,7 @@ div.content {
 .logo{
     display: flex;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
     gap: 15px;
 }
 
@@ -363,43 +364,35 @@ div.content {
 }
 
 .system{
-  margin: 20px;
-  margin-left: 100px;
+  margin: 18px;
+  margin-left: 190px;
   padding: 0px 8px;
   border: 1px solid rgb(150, 201, 150);
   border-radius: 15px;
   background-color: rgb(232, 247, 242);
   color: rgb(9, 156, 9);
+  height: 30px;
+
 }
 
 .sp1{
   color: rgb(216, 211, 211);
   font-size: 25px;
+  margin: 10px;
 }
+
+
 
 .rule{
-  margin: 15px;
-  font-size: 12px;
-  padding: 4px 0px;
-  
+  margin: 18px;
+  border: 1px solid rgb(150, 201, 150);
+  border-radius: 15px;
+  background-color: rgb(232, 247, 242);
+  padding: 0px 20px;
+  height: 28px;
+  color: rgb(9, 156, 9);
 }
 
-.rule button{
-  border: 1px solid #f1efef;
-  border-radius: 10px;
-  background-color: rgb(242, 250, 247);
-  height: 30px;
-}
-
-select{
-  background: none;
-  border: none;
-  color: blue;
-}
-
-option{
-  color: black;
-}
 
 .icons{
   margin: 20px;
@@ -418,21 +411,14 @@ option{
 
 }
 
-
-
-.Av{
-  
-  margin: 15px;
+.select1{
+  background: none;
+  border: none;
 }
 
-.Av button{
-  padding: 0px 10px;
-  border-radius: 29px;
-  border: none;
+.status select{
   background: none;
-  font-size: 22px;
-  color: blue;
-  background-color: rgb(242, 250, 247);
+  border: none;
 }
 
 .start-emp{
@@ -478,7 +464,7 @@ tbody tr{
 }
 
 tbody tr:hover{
-  background: #f8faff;
+  background: #f1f2f3;
 }
 
 .employes{
@@ -693,6 +679,162 @@ td i{
   color: white;
   cursor: pointer;
 }
+
+/* Dark Mode */
+
+body .dark-mode{
+  background-color: white;
+  color: #222;
+  transition: 0.3s;
+}
+
+
+
+
+body.dark-mode{
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .sidebar{
+  background-color: #171717;
+  color: white;
+}
+
+ .dark-mode .content,
+ .dark-mode .main,
+ .dark-mode .start-emp,
+ .dark-mode .epmloye{
+  background-color: #171717;
+  color: white;
+
+}
+
+.dark-mode .export .btn5{
+  color: black;
+}
+
+.dark-mode .employe{
+  background-color: #171717;
+}
+
+.dark-mode .employe button{
+  background-color: #171717;
+}
+
+.dark-mode .employe select{
+  background: none;
+  border: none;
+  color: white;
+}
+
+.dark-mode .employe option{
+  background-color: #171717;
+  color: white;
+}
+
+.dark-mode .dash{
+  color: white;
+}
+
+.dark-mode .main h3 {
+  color: white;
+} 
+
+
+
+ .dark-mode .back{
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode input{
+  background-color: #252525;
+  color: white;
+  border-color: #444;
+}
+
+ .dark-mode input::placeholder{
+  color: #aaa;
+}
+
+ .dark-mode table{
+  background-color: #1e1e1e;
+  color: white;
+}
+
+ .dark-mode th{
+  background-color: #252525;
+  color: white;
+}
+ .dark-mode td{
+  color: #ddd;
+  border-color: #444;
+}
+
+ .dark-mode tr{
+  border-color: #444;
+}
+
+.dark-mode tbody tr:hover{
+  background-color: #222;
+  
+}
+ .dark-mode strong{
+  color: white;
+}
+
+.dark-mode  .probation {
+  color: rgb(218, 143, 4);
+}
+
+ .dark-mode p{
+  color: #bbb;
+}
+
+.dark-mode button{
+  color: white;
+}
+
+.dark-mode select{
+  background-color: white;
+  color: black;
+  border-color: #444;
+}
+ .dark-mode .employee-details{
+  background-color: #1e1e1e;
+  color: white;
+}
+
+ .dark-mode .footer{
+  color: #aaa;
+}
+
+ .dark-mode .footer p{
+  color: #aaa;
+}
+
+#darktheme{
+  cursor: pointer;
+}
+
+#darktheme svg{
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.dark-mode .span1 button{
+  background: #171717;
+  color: white;
+}
+
+.dark-mode .span1 span{
+  color: white;
+}
+
+.dark-mode .show span{
+  color: white;
+}
 @media  (max-width: 480px) {
 
   /* sidebar*/
@@ -795,21 +937,44 @@ td i{
       padding: 5px 10px;
     }
 
-    /* Rule */
-    .rule {
-        margin: 10px 5px;
-    }
+   .input1{
+    width: calc(100% - 20px);
+    margin: 8px  10px !important;
+   }
 
-    /* Icons */
-    .icons {
-        margin: 15px 5px;
-        font-size: 8px;
-    }
+   .input1 input{
+    font-size: 11px;
+    padding: 7px 10px 7px 38px;
+   }
 
-    /* Avatar */
-    .Av {
-        margin: 10px 5px;
-    }
+   #icon3{
+    left: 12px;
+   }
+    
+   
+   .sp1{
+    margin-right: 80px;
+   }
+
+   .rule{
+    margin: 19px !important;
+    padding: 0px 26px;
+    height: 28px;
+    font-size: 16px;
+    display: flex;  
+  
+   }
+
+   .rule svg{
+    width: 15px;
+    height: 24px;
+    
+   }
+
+   .icons{
+    margin-right: 40px;
+   }
+    
   
     .start-emp{
       width: 100%;

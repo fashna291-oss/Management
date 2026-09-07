@@ -232,6 +232,99 @@
     color: black;
    
 }
+
+body .dark-mode{
+    background-color: #0f1025;
+    color: white;
+}
+
+.dark-mode .add,
+.dark-mode .addh,
+.dark-mode .addp{
+    color: white;
+}
+
+.dark-mode .div1,
+.dark-mode .div2{
+    background: #15153b;
+    border-color: #30305c;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+}
+
+.dark-mode .div2 h4{
+    color: white;
+}
+
+.dark-mode .group label{
+    color: #e5e7eb;
+}
+
+.dark-mode .group input,
+.dark-mode .group select{
+    background: #1e2048;
+    color: white;
+    border-color: #44466f;
+}
+
+.dark-mode  .group input::placeholder{
+    color: #aeb2c7;
+}
+
+.dark-mode .group input:focus,
+.dark-mode .group select:focus{
+    border-color: #5d7ff5;
+    box-shadow: 0 0 0 3px rgba(49, 93, 232, 0.25);
+}
+
+.dark-mode .in-icon i,
+.dark-mode .in-icon svg{
+    color: #b8bdd3;
+}
+
+.dark-mode .upload h5{
+    color: white;
+}
+
+.dark-mode .photo img{
+    border-color: #3b416f;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+}
+
+.dark-mode .cancel{
+    background: #1e2048;
+    border-color: #44466f;
+    color: #e5e7eb;
+}
+
+.dark-mode .cancel:hover{
+    background: #292b55;
+}
+
+.dark-mode .save{
+    background-color: #315de8;
+    color: white;
+}
+
+.dark-mode .employee-card{
+    background: #15153b;
+    border-color: #30305c;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+}
+
+.dark-mode .employee-card h2{
+    color: white;
+}
+
+.dark-mode .employee-card p{
+    color: #d5d8e5;
+}
+
+
+
+
+
+
+
 @media (max-width:480px) {
     .add{
         margin-top: 15px;

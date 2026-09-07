@@ -27,3 +27,38 @@ function viewEmployee(view){
 function closeDetails(){
     document.getElementById("employeeDetails").style.display = "none";
 }
+
+let theme = document.getElementById("darktheme");
+
+theme.addEventListener("click", function(){
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        theme.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    } else{
+       theme.innerHTML= '<i class="fa-solid fa-moon"></i>'
+    }
+})
+
+let searchInput = document.getElementById("employeeSearch");
+
+
+searchInput.addEventListener("input", function(){
+
+    let Text = searchInput.value.toLowerCase();
+    let rowss = document.querySelectorAll("tbody tr");
+
+    rowss.forEach(function(row){
+        
+        let employeData = row.innerText.toLowerCase();
+
+        if(employeData.includes(Text)){
+            row.style.display = "";
+        } else{
+            row.style.display = "none";
+        }
+    })
+})
+
+
+
