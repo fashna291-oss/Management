@@ -34,31 +34,27 @@ theme.addEventListener("click", function(){
     document.body.classList.toggle("dark-mode");
 
     if(document.body.classList.contains("dark-mode")){
-        theme.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        theme.innerHTML = ' Dark Mode <i class="fa-solid fa-sun"></i>';
     } else{
-       theme.innerHTML= '<i class="fa-solid fa-moon"></i>'
+       theme.innerHTML= ' Light Mode <i class="fa-solid fa-moon"></i>'
     }
 })
 
 let searchInput = document.getElementById("employeeSearch");
+ let rowss = document.querySelectorAll("tbody tr:not(.show)");
 
 
-searchInput.addEventListener("input", function(){
-
-    let Text = searchInput.value.toLowerCase();
-    let rowss = document.querySelectorAll("tbody tr");
+ searchInput.onkeyup = function(){
+    let search = this.value.toLowerCase();
 
     rowss.forEach(function(row){
-        
-        let employeData = row.innerText.toLowerCase();
 
-        if(employeData.includes(Text)){
-            row.style.display = "";
-        } else{
-            row.style.display = "none";
-        }
+        row.style.display = row.innerText.toLowerCase().includes(search)
+        ? "table-row"
+        : "none";
     })
-})
+ }
+
 
 
 

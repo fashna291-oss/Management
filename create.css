@@ -5,17 +5,15 @@
 }
 
 body{
-       min-height: 100vh;
-    display: flex;
+    min-height: 100vh;
+    display:flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
- background: linear-gradient(135deg,  rgb(1, 41, 56), #091a79);
+     background: linear-gradient(135deg,  rgb(1, 41, 56), #091a79);
 }
 
-
-
-.sign{
+.create{
     width: 420px;
     padding: 35px;
     background: white;
@@ -23,75 +21,83 @@ body{
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-.sign h1{
+.create h1{
     text-align: center;
     color: #15153b;
-    font-size: 28px;
-   margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
-#forms{
-    width: 100%;
+.tittle{
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
 }
 
-#forms input{
+#createfoam input[type="text"],
+#createfoam input[type="email"],
+#createfoam input[type="password"]{
     width: 100%;
     padding: 14px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
     outline: none;
-font-size: 15px;
+    font-size: 15px;
 }
 
-#forms{
+#createfoam input{
     border-color: #5b3ca8;
 }
 
-#forms button{
+.terms{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.terms input{
+    width: 15px;
+    height: 15px;
+}
+
+#createfoam button{
     width: 100%;
     padding: 14px;
     border: none;
     border-radius: 10px;
-   background: #15153b;
+    background:   #15153b;
     color: white;
     font-size: 17px;
     cursor: pointer;
-     transition: all 0.3s ease;
 }
 
 
 
-#forms button{
-     transform: translateY(-5px);
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
-}
-
-.account{
+.login{
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
     color: #666;
 }
 
-.account a{
+.login a{
     color: #15153b;
     text-decoration: none;
     font-weight: bold;
 }
 
-.account a{
-    text-decoration: underline;
-}
-
-
 @media (max-width:480px) {
-    .sign{
-        width: 90%;
+    .create{
+        width: 100%;
         padding: 25px;
     }
 
-    .sign h1{
-        font-size: 24px;
+    .create h1{
+        font-size: 25px;
     }
 }

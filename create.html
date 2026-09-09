@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <div class="create">
+        <h1>Create New Account</h1>
+        <p class="tittle">Create Your account to access Employee Management System</p>
+
+        <form id="createfoam">
+        <input type="text"  id="fullname" placeholder="Full Name" required>
+        <input type="text"  id="username" placeholder="Username" required>
+        <input type="email"  id="email" placeholder="Email" required>
+        <input type="password"  id="password" placeholder="Password" required>
+        <input type="password"  id="cpassword" placeholder="Confirm Password" required>
+
+        <div class="terms">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the Terms & Conditions</label>
+
+        </div>
+
+        <button type="submit">Create Account</button>
+        </form>
+        <p class="login">
+            Already Have an account?
+            <a href="sign.html">Sign Up</a>
+        </p>
+    </div>
+
+
+    <script>
+        let form = document.getElementById("createfoam");
+
+        form.onsubmit = function(e){
+            e.preventDefault();
+
+
+            let password = document.getElementById("password").value
+            let confirmPassword = document.getElementById("cpassword").value;
+
+            if(password !== confirmPassword){
+                alert("password do not match");
+                return;
+            }
+
+            alert("Account Create successfully");
+
+            window.location.href= "dashboard.html"
+        }
+    </script>
+</body>
+</html>

@@ -1,34 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Management</title>
-    <link rel="stylesheet" href="signup.css">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="landing.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
 </head>
+
 <body>
-    <div class="sign">
-        <h1>Employee Management System</h1>
-        <form id="forms">
-            <input type="text" id="username" placeholder="Username" required>
 
-             <input type="email" id="email" placeholder="Email" required>
+    <nav class="nav1">
+        <img src="images/img1.webp" alt="">
 
-              <input type="password" id="password" placeholder="Password" required>
+        <ul class="nav-links1">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MODULES</a></li>
+            <li><a href="#">Media & RESOURCES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
 
-              <button type="submit">Sign Up</button>
-        </form>
-    </div>
-
-    <script>
-        let form = document.getElementById("forms");
-
-        form.onsubmit = function(e){
-            e.preventDefault();
+        <div class="btn1">
+            <button class="themes" id="darktheme">Dark Mode <i class="fa-solid fa-sun"></i></button>
+            <button class="signup-btn1" onclick="window.location.href='sign.html'">Login Up</button>
+        </div>
+    </nav>
 
 
-            window.location.href = "dashboard.html";
-        };
-    </script>
+    <section class="hero1">
+
+        <div class="hero-content1">
+
+            <h2>
+                Best HR <span>SOFTWARE </span></h1>
+                <h2>To Manage Your <span>Employess</span></h2>
+
+                <p>
+                    A complete Human Resource Management System (HRMS) and highly regarded on-cloud and on-premise HR
+                    Software that covers nearly the entire scope of human resource management while being strictly
+                    compliant
+                    with both local and global HR best practices.
+
+
+
+                </p>
+
+                <button class="hero-btn1">
+                    Request A free Demo
+                </button>
+
+        </div>
+
+
+        <div class="hero-image1">
+
+            <img src="images/background.png" alt="Service Professional">
+
+            <div class="service-card1 cardss">
+                <div class="cards">
+                    You Signed In Today at 09:25:50 AM
+                    <span> 5: 55: 20 </span>
+                    <button>SIGN OUT</button>
+                </div>
+
+            </div>
+
+            <div class="service-card1 card-pa">
+                <div class="main-card">
+                    Here is your Last month payslip
+                    <button>Download Payslip <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-upload">
+                            <path d="M12 3v12" />
+                            <path d="m17 8-5-5-5 5" />
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        </svg></button>
+                </div>
+            </div>
+
+
+
+            <div class="service-card1 card-p">
+                <div class="cards1">
+                    <i class="fa-brands fa-google-play"></i>
+                </div>
+
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p>Good Rating</p>
+
+            </div>
+
+            <div class="service-card1 card-c">
+                <img src="images/voice.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+        <h2 class="head"> FlowHCM Top Modules</h2>
+        <div class="maindiv">
+
+            <div class="card mb-3" style="max-width: 300px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <i class="fa-regular fa-circle-user"></i>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee</h5>
+                            <p class="card-text">Streamline Workforce Data and Operations </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 300px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Attendence</h5>
+                            <p class="card-text">Efficient Tract Employee Attendence </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 300px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-notebook-pen">
+                            <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
+                            <path d="M2 6h4" />
+                            <path d="M2 10h4" />
+                            <path d="M2 14h4" />
+                            <path d="M2 18h4" />
+                            <path
+                                d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+                        </svg>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Leave</h5>
+                            <p class="card-text">Simplify Leave Tracking and Approvals</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 300px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-newspaper">
+                            <path d="M15 18h-5" />
+                            <path d="M18 14h-8" />
+                            <path
+                                d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2" />
+                            <rect width="8" height="4" x="10" y="6" rx="1" />
+                        </svg>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Patroll</h5>
+                            <p class="card-text">Effortless Payroll Processing & Reprting </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="maindiv2">
+
+            <div class="card mb-3" style="width: 300px; ">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">HR Letters</h5>
+                            <p class="card-text">Effortless HR Coummunication</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 300px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Performance</h5>
+                            <p class="card-text">Quick & Easy Appraisal Management </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 310px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-life-ring"></i>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Help Desk</h5>
+                            <p class="card-text">Simplify & Track Internal Support Process</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 300px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Training</h5>
+                            <p class="card-text">Stremline Employee Skill Development</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="choose">
+            <div class="headings">
+                <h1>Why Choose <span>FlowHCM</span></h1>
+                <p>FlowHCM stands out among Pakistan’s best HRMS due to its comprehensive features designed to simplify
+                    human resource management. It offers powerful tools for employee data management, payroll
+                    processing, and performance evaluations; all in a user-friendly interface. With its focus on
+                    scalability and efficiency, FlowHCM empowers organizations to optimize their Human Resources
+                    processes and enhance overall productivity seamlessly</p>
+            </div>
+            <div class="lap">
+                <img src="images/laptopn.webp" alt="">
+            </div>
+            <div class="HR">
+                <div class="pay">
+                    <p><i class="fa-regular fa-circle-check"></i>Fastest-Growing HR Software</p>
+                    <p><i class="fa-regular fa-circle-check"></i> Single-Click Payroll Processing</p>
+                    <p><i class="fa-regular fa-circle-check"></i>Automated Alerts & Notifications</p>
+                    <p><i class="fa-regular fa-circle-check"></i>Customized User Roles</p>
+
+                </div>
+
+                <div class="pay">
+                    <p><i class="fa-regular fa-circle-check"></i>Dynamic Workflow & Approvals</p>
+                    <p><i class="fa-regular fa-circle-check"></i>Employee Self-Service (ESS) Portal</p>
+                    <p><i class="fa-regular fa-circle-check"></i>Dynamic & Customizable Reports</p>
+                    <p><i class="fa-regular fa-circle-check"></i>Analytical & Dynamic HR Dashboards</p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="enrol">
+            <div class="mob">
+                <img src="images/mobile.webp" alt="">
+            </div>
+            <div class="flow">
+                <h1>
+                    <span>FlowHCM</span> Employee Self-Service (ESS) Mobile App
+                </h1>
+                <p>Empower your employees with the FlowHCM ESS Mobile Application, a revolutionary feature of our Human
+                    Resource Management System. Downloaded by over 300,000+ users worldwide, this mobile app supports
+                    voice functions such as sign-in and sign-out, bringing modern automation to your HR Management.</p>
+
+                <p><i class="fa-solid fa-house-chimney-user"></i>
+                    Review attendance and leave summaries directly from the home dashboard.</p>
+                <p><i class="fa-solid fa-bell"></i>Receive instant notifications for smoother HR workflows.</p>
+                <p><i class="fa-solid fa-calendar-days"></i>Apply for leaves conveniently through the mobile app.</p>
+                <p><i class="fa-regular fa-calendar-days"></i>
+                    Access your payslips in real time.</p>
+                <p><i class="fa-solid fa-user-check"></i>
+                    Approve employee requests with a single touch.</p>
+                <div class="google">
+                    <img src="images/play.svg" alt="">
+                    <img src="images/store.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="rev">
+            <h1>A Revolution Transformation In The HR Industry</h1>
+            <p>Recognized as one of the fastest-growing HRMS in Pakistan, FlowHCM has been at the forefront of
+                innovation in the Human Resource Software industry. Its footprint extends internationally with rapid HR
+                software implementations. FlowHCM continues to set benchmarks as a user-friendly and scalable HR
+                Management System trusted by businesses in Pakistan and beyond.</p>
+        </div>
+        <div class="num">
+            <div class="line">
+            <span>1,400+</span>
+            <p>Active Customer</p>
+            </div>
+
+            <div class="line">
+            <span>6 Billion+</span>
+            <p>PKR Payroll Processed</p>
+            </div>
+            <div class="line">
+            <span>300K+</span>
+            <p>App Downloads </p>
+            </div>
+
+            <div class="line">
+            <span>A +</span>
+            <p>Rating</p>
+            </div>
+
+            <div class="line">
+            <span>800,000+</span>
+            <p>Users </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="footer">
+        <div class="top">
+            <div class="foot">
+                <h6>FlowHCM - Fastest Growing HR Software</h6>
+                <img src="images/hcm.webp" alt="" id="hcm">
+                <p>Fastest Growing Complete Human Capital Management Software with 18 Super Modules Developed By Impetus Systems Pvt Ltd.</p>
+                <img src="images/play.svg" alt="" >
+                <img src="images/store.svg" alt="">
+            </div>
+
+            <div class="foot">
+                <h6>Top Modules</h6>
+                <ul>
+                    <li><a href="#">Expense Management</a></li>
+                     <li><a href="#">Help Desk Management</a></li>
+                      <li><a href="#">HP Letters Management</a></li>
+                       <li><a href="#">Leave Management</a></li>
+                </ul>
+
+            </div>
+            <div class="foot">
+                <h6>Navigate</h6>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                     <li><a href="#">About us</a></li>
+                      <li><a href="#">Clients</a></li>
+                       <li><a href="#">Blogs</a></li>
+                       <li><a href="#">Contact</a></li>
+                       <li><a href="#">Modules</a></li>
+                       <li><a href="#">Resellers</a></li>
+                       <li><a href="#">Privacy Policy</a></li>
+                </ul>
+
+            </div>
+
+             <div class="foot">
+                
+                <h6>Contact With Us</h6>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i>+923470213620</a></li>
+                     <li><a href="#"><i class="fa-solid fa-phone"></i>+923183742692+</a></li>
+                      <li><a href="#"><i class="fa-solid fa-phone"></i>+255768511111</a></li>
+                       <li><a href="#"><i class="fa-regular fa-envelope"></i> sales@flowhcm.com</a></li>
+                         <div class="icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                       </div>
+
+                       </ul>
+                     
+            </div>
+        </div>
+            <p>Copyright © 2026 Impetus Systems (Pvt) Ltd</p>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script src="script.js"></script>
 </body>
+
 </html>

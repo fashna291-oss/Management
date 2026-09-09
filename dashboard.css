@@ -1,3 +1,177 @@
+.box{
+    width: calc(100% - 40px);
+    margin: 25px 20px 20px;
+    padding: 30px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 16px;
+    background: linear-gradient(135deg,  rgb(1, 41, 56), #091a79);
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    animation: box 0.8s ease-out;
+}
+
+@keyframes box {
+    from{
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text{
+    flex: 1;
+}
+
+.text p{
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    opacity: 0.75;
+}
+
+.text h1{
+    margin: 0 0 10px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.text span{
+    font-size: 14px;
+    opacity: 0.75;
+}
+
+.adminbtn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.adminbtn button{
+    border: 1px solid #b8c2fd;
+    background: transparent;
+    color: white;
+    padding: 12px 15px ;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.adminbtn button:hover{
+    transform: translateY(-2px);
+}
+
+.adminbtn button i{
+    margin-right: 2px;
+}
+
+.adminbtn button:hover{
+    background: rgba(255,255,255,0.12);
+}
+
+.adminbtn .add-btn{
+    background: white;
+    color: #0b125e;
+    font-weight: 600;
+    border: 1px solid #b8c2fd;
+}
+
+.adminbtn .add-btn:hover{
+    background: #f2f2f2;
+
+}
+
+.cards{
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.dash-card{
+    background: white;
+    border: 1px solid #e1e4ef;
+    border-radius: 16px;
+    padding: 25px;
+    min-height: 170px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.04);
+    animation: card 0.7s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes card {
+        from{
+            opacity: 0;
+            transform: translateY(25px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+}   
+.dash-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-top p{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #303b69;
+    letter-spacing: 0.5px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: #e9efff;
+    color: #3158d9;
+    font-size: 17px;
+}
+
+.card-bottom{
+    margin-top: 25px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.card-bottom h2{
+    margin: 0 0 5px;
+    color: #182654;
+    font-size: 30px;
+}
+
+.card-bottom span{
+    color: #68739a;
+    font-size: 13px;
+}
+
+.card-bottom strong{
+    color: #304c9b;
+    font-size: 13px;
+}
+
 .charts{
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +219,11 @@
     height: 100% !important;
 }
 
+.dark-mode .box{
+    background: #171727;
+    box-shadow: 0px 4px 15px rgba(34, 34, 34, 0.4);
+}
+
  .dark-mode .charts .chart-box,
 .dark-mode .charts  .chart-boxx,
 .dark-mode .charts .chart-box2{
@@ -55,6 +234,93 @@
     }
 
 @media (max-width: 480px){
+
+    .box{
+        width: calc(100% - 20px);
+        margin: 15px 10px;
+        padding: 20px;
+        flex-direction: column;
+        align-self: flex-start;
+        justify-content: center;
+        gap: 20px;
+        min-height: auto;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .text p{
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        margin-bottom: 8px;
+    }
+
+    .text h1{
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+
+    .text span{
+        font-size: 12px;
+        line-height: 1.5;
+        display: block;
+    }
+
+    .adminbtn{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .adminbtn button{
+        width: 100%;
+        padding: 11px;
+        font-size: 12px;
+    }
+
+    .cards{
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .dash-card{
+        width: 100%;
+        min-height: 150px;
+        padding: 20px;
+    }
+
+    .card-top p{
+        font-size: 11px;
+    }
+
+    .icon{
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    .card-bottom{
+        margin-top: 20px;
+    }
+
+    .card-bottom h2{
+        font-size: 12px;
+    }
+
+    .card-bottom span{
+        font-size: 12px;
+    }
+
+    .card-bottom strong{
+        font-size: 11px;
+    }
+
     .charts{
         display: flex;
         flex-direction: column;
