@@ -766,13 +766,17 @@ body.dark-mode{
   color: #aaa;
 }
 
+.dark-mode .btn6{
+  background: #171727;;
+}
+
  .dark-mode table{
-  background-color: #1e1e1e;
+  background-color: #171727;
   color: white;
 }
 
  .dark-mode th{
-  background-color: #252525;
+  background-color: #3d3d85;;
   color: white;
 }
  .dark-mode td{

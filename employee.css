@@ -301,8 +301,13 @@ body .dark-mode{
 }
 
 .dark-mode .save{
-    background-color: #315de8;
+    background-color:#1e2048;
+    border-color: #44466f;
     color: white;
+}
+
+.dark-mode .save:hover{
+    background: #292b55;
 }
 
 .dark-mode .employee-card{
