@@ -23,6 +23,19 @@ body {
 }
 
 
+@keyframes nav {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 
 .nav-links1{
     display:flex;
@@ -68,10 +81,12 @@ body {
   font-weight: 600;
   cursor: pointer;
     box-shadow:0 0 20px rgb(3, 3, 0.9);
+    transition: all 0.3s ease;
 }
 
 .themes:hover{
     box-shadow:0 0 30px #014461;
+    transform: translateY(-4px) scale(1.03);
 }
 
 
@@ -83,12 +98,12 @@ body {
     color:white;
     font-weight:600;
     cursor:pointer;
-    transition:.4s;
+     transition: all 0.3s ease;
     box-shadow:0 0 20px rgb(3, 3, 0.9);
 }
 
 .signup-btn1:hover{
-    transform:translateY(-3px);
+  transform: translateY(-4px) scale(1.03);
     box-shadow:0 0 30px #014461;
 }
 
@@ -99,7 +114,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background: linear-gradient(135deg,  rgb(4, 156, 216), #f8f9ff);
     overflow: hidden;
 }
@@ -107,6 +121,18 @@ body {
 .hero-content1 {
     width: 45%;
     animation: content 1s ease;
+}
+
+@keyframes content {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .hero-content1 h2{
@@ -139,7 +165,7 @@ body {
     border-radius: 15px;
     font-size: 14px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: all 0.3s ease;
     border: none;
     box-shadow:0 0 20px rgb(3, 3, 0.9);
    
@@ -147,7 +173,7 @@ body {
 
 .hero-btn1:hover {
      box-shadow:0 0 30px #014461;
-    transform: translateY(-4px);
+    transform: translateY(-5px) scale(1.03);
 }
 
 
@@ -161,6 +187,22 @@ body {
     align-items: center;
     animation: image 1s ease;
 }
+
+
+
+@keyframes image {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 
 .hero-image1 img {
     width: 800px;
@@ -185,6 +227,21 @@ body {
     z-index: 3;
   animation: floating1 3s ease-in-out infinite;
   transition: 0.3s;
+}
+
+
+@keyframes floating1 {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .service-card1:hover{
@@ -351,10 +408,15 @@ padding: 25px;
    color: white;
 }
 
-.row{
+#rows{
     background: #025d85;
     border-radius: 6px;
-    animation: fade 0.8s ease;
+    transition: all 0.4s ease;
+}
+
+#rows:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .card-body h5{
@@ -421,7 +483,7 @@ padding: 25px;
 .cert{
     text-align: center;
     margin-top: 90px;
-    animation: fade 1s ease;
+
 }
 
 
@@ -460,7 +522,7 @@ padding: 25px;
 .flow{
     margin-top: 100px;
     margin-left: -70px;
-    animation: fade 1s ease;
+   
 }
 
 .flow span{
@@ -486,7 +548,7 @@ padding: 25px;
 .rev{
     text-align: center;
     margin-top: 30px;
-    animation: fade 1s ease;
+   
 }
 
 .rev h1{
@@ -507,6 +569,14 @@ padding: 25px;
    gap: 50px;
 }
 
+.line{
+    transition: all 0.3s ease;
+}
+
+.line:hover{
+    transform: translateY(-8px);
+}
+
 .line span{
     color: #025d85;
     font-size: 50px;
@@ -514,13 +584,14 @@ padding: 25px;
 
 .line p{
     font-size: 25px;
+    font-weight: bold;
 }
 
 .footer{
     width: 100%;
     background: #014461;
     margin-top: 40px;
-    animation: fade 1s ease;
+    
 }
 
 .footer p{
@@ -562,7 +633,12 @@ padding: 25px;
     color: white;
     text-decoration: none;
     font-size: 20px;
-  
+    transition: all 0.3s ease;
+}
+
+.foot li a:hover{
+    color: #38bdf8;
+    transform: translateX(8px);
 }
 
 .foot h6{
@@ -572,9 +648,19 @@ padding: 25px;
     
 }
 
+.foot h6:hover{
+    color: #38bdf8;
+}
+
 .icon i{
     font-size: 25px;
     margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.icon i:hover{
+    color: #38bdf8;
+    transform: translateY(-5px) scale(1.15);
 }
 
 body.dark-mode{
@@ -697,17 +783,7 @@ body.dark-mode{
     background: #0369a1;
 }
 
-@keyframes nav {
-    from{
-        opacity: 0;
-        transform: translateY(-30px);
-    }
 
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 @keyframes image {
     from{
@@ -721,17 +797,6 @@ body.dark-mode{
     }
 }
 
-@keyframes fade {
-    from{
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 @keyframes floating1 {
     0%{
@@ -876,7 +941,7 @@ body.dark-mode{
     }
 
     /* Bootstrap Row */
-    .row{
+    #row{
         margin: 0 10px;
     }
 

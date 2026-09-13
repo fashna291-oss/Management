@@ -41,17 +41,23 @@ theme.addEventListener("click", function(){
 })
 
 let searchInput = document.getElementById("employeeSearch");
- let rowss = document.querySelectorAll("tbody tr:not(.show)");
+ let rowss = document.querySelectorAll("tbody tr");
 
 
  searchInput.onkeyup = function(){
-    let search = this.value.toLowerCase();
+    let search = this.value.toLowerCase().trim();
 
     rowss.forEach(function(row){
 
-        row.style.display = row.innerText.toLowerCase().includes(search)
-        ? "table-row"
-        : "none";
+        if(row.classList.contains("show")){
+            return;
+        }
+
+        let text = row.textContent.toLowerCase();
+
+        row.style.display = text.includes(search)
+       ? "table-row"
+       : "none";
     })
  }
 
