@@ -45,22 +45,19 @@ let searchInput = document.getElementById("employeeSearch");
 
 
  searchInput.onkeyup = function(){
-    let search = this.value.toLowerCase().trim();
+    let search = this.value.toLowerCase();
 
     rowss.forEach(function(row){
 
-        if(row.classList.contains("show")){
-            return;
+        let text = row.querySelector("strong").textContent.toLowerCase();
+
+        if(text.includes(search)){
+            row.style.display = "table-row";
+        } else {
+            row.style.display = "none";
         }
+ })
 
-        let text = row.textContent.toLowerCase();
-
-        row.style.display = text.includes(search)
-       ? "table-row"
-       : "none";
-    })
- }
-
-
+ };
 
 
